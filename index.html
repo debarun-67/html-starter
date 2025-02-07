@@ -1,96 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<html>
+    <head>
+        <title>
+            Youtube clone
+        </title>
+        <link rel="stylesheet" href="../styles/video.css">
+        <link rel="stylesheet" href="../styles/general.css">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <div class="left-section">
+                <img class="hamburger-menu" src="../icons/hamburger-menu.svg">
+                <img class="youtube-logo" src="../icons/youtube-logo.svg">
+            </div>
+            <div class="center-section">
+               <input class="search" type="text" placeholder="Search">
+               <button class="search-button">
+                <img class="search-icon" src="../icons/search.svg">
+               </button>
+               <button class="voice-search-button">
+                <img class="voice-search-icon" src="../icons/voice-search-icon.svg">
+               </button>
+            </div>
+            <div class="right-section">
+                <img class="upload-icon" src="../icons/upload.svg" >
+                <img class="youtube-apps" src="../icons/youtube-apps.svg">
+                <img class="notification" src="../icons/notifications.svg">
+                <img class="account-profile" src="../channel-profile/channels4_profile.jpg">
+            </div>
+        </div>
+        
+        <div class="video-grid">
+        <div class="video-preview">
+            <div>
+                <img class="thumbnail" src="../thumbnails/mkbhd.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="profile" >
+                    <img class="channel-profile" src="../channel-profile/channel-1.jpeg";>
+                </div>
+                <div class="info" >
+                    <p class="video-title">
+                    Talking Tech and AI with Google CEO
+                    Sundar Pichai!
+                </p>
+                <p class="video-author">MKBHD</p>
+                <p class="video-stat">3.4M views &#183 6 months ago</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div>
+                <img class="thumbnail" src="../thumbnails/t2.webp">
+            </div>
+            <div class="video-info-grid">
+            <div class="profile" >
+                <img class="channel-profile" src="../channel-profile/channel-2.jpeg";>
+            </div>
+            <div class="info" >
+                <p class="video-title">Try not to laugh Challenge
+            </p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stat">19M views &#183 4 years ago</p>
+            </div>   
+        </div>
+        </div>
+        
+        <div class="video-preview">
+            <div>
+                <img class="thumbnail" src="../thumbnails/t3.png">
+            </div>
+            <div class="video-info-grid">
+                <div class="profile" >
+                    <img class="channel-profile" src="../channel-profile/p3.jpg";>
+                </div>
+                <div class="info" >
+                    <p class="video-title">
+                    Valorant is fun again
+                </p>
+                <p class="video-author">Ziptie</p>
+                <p class="video-stat">274K views &#183 12 days ago</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div>
+                <img class="thumbnail" src="../thumbnails/t4.webp">
+            </div>
+            <div class="video-info-grid">
+            <div class="profile" >
+                <img class="channel-profile" src="../channel-profile/p4.jpeg";>
+            </div>
+            <div class="info" >
+                <p class="video-title">
+                    Crazy Tik Toks Taken Moments Before DISASTER
+            </p>
+            <p class="video-author">SSSniperWolfr</p>
+            <p class="video-stat">12M views &#183 1 years ago</p>
+            </div>   
+        </div>
+        </div>
+
+        <div class="video-preview">
+            <div>
+                <img class="thumbnail" src="../thumbnails/t5.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="profile" >
+                    <img class="channel-profile" src="../channel-profile/p5.jpeg";>
+                </div>
+                <div class="info" >
+                    <p class="video-title">
+                        Kadane's Algorithm to Maximum Sum Subarray Problem
+                </p>
+                <p class="video-author">CS DOJO</p>
+                <p class="video-stat">519K views &#183 5 years ago</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div>
+                <img class="thumbnail" src="../thumbnails/t6.png">
+            </div>
+            <div class="video-info-grid">
+            <div class="profile" >
+                <img class="channel-profile" src="../channel-profile/p6.jpg";>
+            </div>
+            <div class="info" >
+                <p class="video-title">I Made a Tiny Voulumetric Lamp
+            </p>
+            <p class="video-author">Nick Electronics</p>
+            <p class="video-stat">241K views &#183 13 days ago</p>
+            </div>   
+        </div>
+        </div>
+    </div>
+
+    </body>
 </html>
